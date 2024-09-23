@@ -6,7 +6,8 @@
 
 }
 body{
-    background-color: #081B29;
+    background-color:black;
+    color: aliceblue;
 
 }
 .header{
@@ -15,14 +16,38 @@ body{
     left:0;
     width:100%;
     padding:20px 10%;
-    background: yellowgreen;
+    background: transparent;
     display: flex;
     justify-content:space-between;
     align-items: center;
     z-index:100;
 }
 .logo{
-    font-size:25px;
+    font-size:35px;
     color:white;
-    text-decoration:double;
+    text-decoration:none;
+    font-weight: 800;
+}
+.navbar a{
+    font-size: 18px;
+    color:#ffff;
+    text-decoration: none ;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,.navbar a.active{
+    color: #00abf0;;
+}
+.home{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    padding:10%;
+    font-size: 25px;
+    font-weight: 40000;
+
+}
+.home-content{
+    background-color: rgb(25, 231, 25);
 }
