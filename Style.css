@@ -16,7 +16,7 @@ body{
     left:0;
     width:100%;
     padding:20px 10%;
-    background: transparent;
+    background: rgb(43, 70, 43);
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -24,7 +24,7 @@ body{
 }
 .logo{
     font-size:35px;
-    color:white;
+    color:#ffff;
     text-decoration:none;
     font-weight: 800;
 }
@@ -49,5 +49,39 @@ body{
 
 }
 .home-content{
-    background-color: rgb(25, 231, 25);
+    background-color: rgb(43, 70, 43);
+}
+.navbar .login-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ddd;
+    outline:none;
+    border-radius: 60px;
+    cursor:pointer;
+    font-size: medium;
+    color:white;
+    font-weight:500;
+    margin-left: 40px;
+}
+.navbar a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #b90e0e;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar a::after{
+    transform: scaleX(1);
+} 
+.navbar .login-popup:hover{
+    background:white;
+    color:#162938;
+    transition: .5s;
 }
