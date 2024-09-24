@@ -6,7 +6,7 @@
 
 }
 body{
-    background-color:black;
+    background: url('wallpaperflare.com_wallpaper (5).jpg');
     color: aliceblue;
 
 }
@@ -16,7 +16,7 @@ body{
     left:0;
     width:100%;
     padding:20px 10%;
-    background: rgb(43, 70, 43);
+    background: rgb(189, 127, 127);
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -24,7 +24,7 @@ body{
 }
 .logo{
     font-size:35px;
-    color:#ffff;
+    color:cornsilk;
     text-decoration:none;
     font-weight: 800;
 }
@@ -49,20 +49,35 @@ body{
 
 }
 .home-content{
-    background-color: rgb(43, 70, 43);
+    background-color: rgb(43, 70, 43) transparent;
+    color: rgb(255, 255, 255);
 }
-.navbar .login-popup{
-    width: 130px;
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+    background-color: rgb(189, 127, 127);
+}
+.btn{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    border-radius: 50px;
+    width: 75px;
     height: 50px;
-    background: transparent;
-    border: 2px solid #ddd;
-    outline:none;
-    border-radius: 60px;
-    cursor:pointer;
-    font-size: medium;
+    justify-content: space-around;
     color:white;
-    font-weight:500;
-    margin-left: 40px;
+    cursor: pointer;
+    transition:
+        scale 0.25s ease-in,
+        opacity 0.25s ease-in,
+        filter 0.25s ease-in; 
+    &:hover{
+        scale: 1.2;
+    }
+}
+.navbar:has(.btn:hover) .btn:not(:hover){
+    scale: 0.8;
+    opacity: 0.8;
+    filter: blur(4px);
 }
 .navbar a:after {
     content: '';
