@@ -1,0 +1,124 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../MentorShip/background.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    filter: blur(8px); 
+    z-index: -1; 
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgb(103, 129, 224);
+    width: 350px;
+    max-width: 90%;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.logo-container img {
+    width: 400px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.form input[type="text"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+.form a {
+    text-decoration: none;
+    color: #004aad;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+.form a:hover {
+    color: #003480; 
+}
+.form .button {
+    margin-top: 20px;
+    background-color:#004aad;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+.main .form .button:hover{
+    color: #003480;    
+}
+.form .button a {
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 30px;
+    }
+
+    .logo-container {
+        margin-bottom: 20px;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        width: 100%;
+    }
+
+    .form .button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .logo-container img {
+        width: 120px;
+    }
+}
