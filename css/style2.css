@@ -17,6 +17,15 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
 }
 
 header h1 {
@@ -46,113 +55,32 @@ nav ul li a:hover {
     color: #A8DADC;
 }
 
-section.hero {
-    background-color: #A8DADC;
-    padding: 80px 0;
-    text-align: center;
-    color: #2C3E50;
-}
-
-section.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-section.hero button {
-    background-color: #457B9D;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-}
-
-section.hero button:hover {
-    background-color: #1D3557;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Mentor List Styles */
-section.mentor-list {
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.mentor-card {
-    background-color: #FFF;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.mentor-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-.mentor-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.mentor-card p {
-    font-size: 1em;
-    margin-bottom: 15px;
-    color: #555;
-}
-
-.mentor-card button {
-    background-color: #1D3557;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.mentor-card button:hover {
-    background-color: #457B9D;
-}
-
-/* Form Styling */
-section.mentor-form, section.contact-form {
+/* Mentor Form Styles */
+section.mentor-form {
     background-color: #FFF;
     max-width: 600px;
     margin: 40px auto;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-section.mentor-form form, section.contact-form form {
+section.mentor-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4C5F6B;
+}
+
+section.mentor-form form {
     display: flex;
     flex-direction: column;
 }
 
 form label {
-    margin-bottom: 10px;
     font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
     color: #333;
 }
 
@@ -178,4 +106,15 @@ form button {
 
 form button:hover {
     background-color: #1D3557;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section.mentor-form {
+        padding: 20px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 1em;
+    }
 }

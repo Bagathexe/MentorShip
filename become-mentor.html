@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Become a Mentor</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
     <header>
+        <img src="assets/logo.png" alt="Mentorship Logo" class="logo">
         <h1>Become a Mentor</h1>
         <nav>
             <ul>
@@ -20,17 +21,24 @@
     </header>
 
     <section class="mentor-form">
-        <form action="#">
+        <h2>Share your expertise and guide the next generation</h2>
+        <form action="" method="post">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <input type="text" id="name" name="name" required>
 
-            <label for="field">Field of Expertise</label>
-            <input type="text" id="field" name="field" placeholder="Your field of expertise" required>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="experience">Years of Experience</label>
-            <input type="number" id="experience" name="experience" placeholder="Your experience in years" required>
+            <label for="expertise">Area of Expertise</label>
+            <input type="text" id="expertise" name="expertise" required>
 
-            <button type="submit">Submit</button>
+            <label for="bio">Short Bio</label>
+            <textarea id="bio" name="bio" rows="4" required></textarea>
+
+            <label for="linkedin">LinkedIn Profile</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/your-profile">
+
+            <button type="submit">Become a Mentor</button>
         </form>
     </section>
 
