@@ -5,13 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "MentorshipApplication",
-            "request": "launch",
-            "mainClass": "com.example.mentorship.MentorshipApplication",
-            "projectName": "mentorship"
-        },
-        {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
