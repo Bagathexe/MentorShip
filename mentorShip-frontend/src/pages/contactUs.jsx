@@ -1,0 +1,22 @@
+function Contactus() {
+    return ( <>
+    
+    <section class="contact-form">
+        <form action="#">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    </> );
+}
+
+export default Contactus;

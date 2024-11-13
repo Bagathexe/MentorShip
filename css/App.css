@@ -1,0 +1,42 @@
+/* App.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4C5F6B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  section.hero {
+    background-color: #A8DADC;
+    padding: 80px 0;
+    text-align: center;
+    color: #2C3E50;
+  }
+  
+  section.mentor-list {
+    padding: 40px 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
